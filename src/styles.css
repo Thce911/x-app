@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* SVGS*/
+.text{
+    background: url('/assets/icons/text.svg');
+    background-repeat: no-repeat;
+}
+
+.flipbook{
+    background: url('/assets/icons/flipbook.svg');
+    background-repeat: no-repeat;
+}
+
+.code{
+    background: url('/assets/icons/code.svg');
+    background-repeat: no-repeat;
+}
+
+.forum{
+    background: url('/assets/icons/forum.svg');
+    background-repeat: no-repeat;
+}
+
+.info{
+    background: url('/assets/icons/info.svg');
+    background-repeat: no-repeat;
+}
+
+.image{
+    background: url('/assets/icons/image.svg');
+    background-repeat: no-repeat;
+}
+
+.acordeon{
+    background: url('/assets/icons/acordeon.svg');
+    background-repeat: no-repeat;
+}
+
+.modales{
+    background: url('/assets/icons/modal.svg');
+    background-repeat: no-repeat;
+}
+
+.pdf{
+    background: url('/assets/icons/pdf.svg');
+    background-repeat: no-repeat;
+}
+
+.select{
+    background: url('/assets/icons/act.svg');
+    background-repeat: no-repeat;
+}
+
+.slider{
+    background: url('/assets/icons/slider.svg');
+    background-repeat: no-repeat;
+}
+.cartg{
+    background: url('/assets/icons/cartg.svg');
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+

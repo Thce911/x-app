@@ -1,0 +1,62 @@
+.drag-unit {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.container-bag {
+    width: 100%;
+    height: 200px;
+    border: solid black;
+    margin-bottom: 50px;
+}
+
+.mother {
+    text-align: center;
+    background-color: #727272;
+}
+
+.title{
+    background-color:#0134a1; 
+    padding:15px; 
+    color:white;
+    text-align: "center";
+    width: 100%;
+    margin: 0px;
+}
+.subtitle{
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: #ececec;
+    margin: 0px;
+}
+
+.contain{
+    height: 500px;
+    background-color:#ececec; 
+    padding:10px; 
+    font-size:16px;
+}
+
+.subcontain{
+    height: 250px;
+    background-color:#ececec; 
+}
+
+.number {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #777;
+    border-radius: 10px;
+  }

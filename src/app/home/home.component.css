@@ -1,0 +1,14 @@
+.fondo{
+    background: url('/assets/icons/bg.png');
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 800px;
+    color: #ffffff;
+    padding: 10px;
+    
+
+}
+
+.full{
+    
+}
