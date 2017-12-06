@@ -1,24 +1,23 @@
 <div class="fondo">
-  <h2>Hello World</h2>
     <div class="container">
         <h1>Crea tu curso</h1>
         <form (ngSubmit)="onSubmit()" #courseForm="ngForm">
           <div class="form-group">
             <label for="courseName">Nombre del Curso</label>
-            <input type="text" class="form-control" id="courseName" required [(ngModel)]="course.courseName" name="courseName">
+            <input type="text" class="form-control" id="courseName" required minlength="4" [(ngModel)]="course.courseName" name="courseName">
           </div>
 
           <div class="form-group">
             <label for="professor">Nombre del Profesor</label>
-            <input type="text" class="form-control" id="professor" required [(ngModel)]="course.professor" name="professor">
+            <input type="text" class="form-control" id="professor" required minlength="2" [(ngModel)]="course.professor" name="professor">
           </div>
   
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" required [(ngModel)]="course.email" name="email">
+            <input type="email"  class="form-control" id="email" required [(ngModel)]="course.email" name="email" email>
           </div>
   
-          <button type="submit" class="btn btn-warning" (click)="newCourse(); courseForm.reset()" routerLink="/creator">Crear</button>
+          <button type="submit" class="btn btn-success" [disabled]="!courseForm.form.valid">Crear</button>
   
         </form>
     </div>

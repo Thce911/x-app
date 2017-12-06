@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SortablejsOptions } from 'angular-sortablejs';
+
+import { Course } from '../course';
+import { CourseService } from '../course.service';
+import { SortablejsService } from 'angular-sortablejs/dist/src/sortablejs.service';
 
 
 
@@ -9,10 +13,12 @@ import { SortablejsOptions } from 'angular-sortablejs';
   styleUrls: ['./creator.component.css']
 })
 export class CreatorComponent implements OnInit {
-
   optionsA: SortablejsOptions = {
     group: 'shared',
-    animation: 100
+    animation: 100,
+    onAdd: (event: any) => {
+      console.log(event.to);
+    }
   };
   optionsB: SortablejsOptions = {
     animation: 200,
@@ -20,13 +26,17 @@ export class CreatorComponent implements OnInit {
     group: {
       name: 'shared',
       pull: 'clone',
-      revertClone: true
+      revertClone: true,
+      put: false
     }
-    
   };
 
+course: Course;
+  constructor(courseService: CourseService) {
+    this.course = courseService.curso;
+   }
 
-  constructor() { }
+
 
   ngOnInit() {
   }

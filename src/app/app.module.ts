@@ -12,6 +12,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { AppRoutingModule } from './app-routing.module';
 import { CreatorComponent } from './creator/creator.component';
 import { HomeComponent } from './home/home.component';
+import { CourseService } from './course.service';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CourseService],
   bootstrap: [AppComponent],
 })
 
