@@ -14,20 +14,24 @@ import { SortablejsService } from 'angular-sortablejs/dist/src/sortablejs.servic
 })
 export class CreatorComponent implements OnInit {
   optionsA: SortablejsOptions = {
-    group: 'shared',
-    animation: 100,
-    onAdd: (event: any) => {
-      console.log(event.to);
-    }
+    group: {
+      name: 'shared',
+      put: function (to) {
+        return to.el.children.length < 2;
+      }
+    },
+    animation: 100
   };
   optionsB: SortablejsOptions = {
-    animation: 200,
+    animation: 100,
     sort: false,
     group: {
       name: 'shared',
       pull: 'clone',
       revertClone: true,
-      put: false
+    },
+    onAdd: function (evt) {
+      evt.item.parentNode.removeChild(evt.item);
     }
   };
 

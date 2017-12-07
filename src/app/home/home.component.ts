@@ -10,10 +10,10 @@ import { CourseService } from '../course.service';
 })
 export class HomeComponent {
 
-  public course: Course;
+  course: Course;
   constructor(private router: Router, private courseService: CourseService) {
     this.course = courseService.curso;
-   }
+  }
 
   onSubmit() {
     this.router.navigateByUrl('/creator', {skipLocationChange: true});
