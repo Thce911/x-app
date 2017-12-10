@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CreatorComponent } from './creator/creator.component';
 import { HomeComponent } from './home/home.component';
 import { CourseService } from './course.service';
+import { PublishComponent } from './publish/publish.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { CourseService } from './course.service';
     AppComponent,
     CreatorComponent,
     HomeComponent,
+    PublishComponent,
   ],
   imports: [
     BrowserModule,

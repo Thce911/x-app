@@ -5,3 +5,9 @@ export class Course {
         public email: string
     ) { }
 }
+
+export class Pendejada {
+    constructor(
+        public elements
+    ) {    }
+}

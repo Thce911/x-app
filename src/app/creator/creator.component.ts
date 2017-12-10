@@ -1,9 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { SortablejsOptions } from 'angular-sortablejs';
 
-import { Course } from '../course';
+import { SortablejsOptiosasda } from 'editable';
+
+import { Course, Pendejada } from '../course';
 import { CourseService } from '../course.service';
 import { SortablejsService } from 'angular-sortablejs/dist/src/sortablejs.service';
+import { stringify } from 'querystring';
 
 
 
@@ -35,14 +39,26 @@ export class CreatorComponent implements OnInit {
     }
   };
 
-course: Course;
-  constructor(courseService: CourseService) {
+  course: Course;
+  pendejada: Pendejada;
+
+  constructor(private router: Router, courseService: CourseService) {
     this.course = courseService.curso;
+    this.pendejada = courseService.pendejada;
    }
-
-
 
   ngOnInit() {
   }
 
+  toPublish() {
+    var ayy = document.querySelectorAll(".contenedor");
+    for (const lmao of <any>ayy) {
+      var x = lmao.querySelectorAll('div');
+      for (const y of x) {
+        this.pendejada.elements.push(y);
+      }
+    }
+    console.log(this.pendejada.elements);
+   this.router.navigateByUrl('/publish', {skipLocationChange: true});
+  }
 }

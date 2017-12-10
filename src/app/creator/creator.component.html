@@ -3,32 +3,44 @@
   <br>
   <div class="row">
     <div> Bienvenido {{course.professor}}, puede comenzar a diseñar su curso de {{course.courseName}}</div>
+    <button (click)="toPublish()">Pushame</button>
   </div>
   <div class="row">
     <div class="col-md-4" >
       <h3 class="title"> APERTURA</h3>
       <h4 class="subtitle"><span class="badge badge-default badge-pill">1</span> Introducción</h4>
-      <div class= "contain" [sortablejs] [sortablejsOptions]="optionsA"></div>
+      <div class= "contain contenedor" [sortablejs] [sortablejsOptions]="optionsA">
+        <div class="drag-unit text"></div>
+      </div>
     </div>
 
     <div class="col-md-4 ">
       
       <h3 class="title"> DESARROLLO</h3>
       <h4 class="subtitle"><span class="badge badge-default badge-pill">2</span> Presentación</h4>
-      <div class= "subcontain" [sortablejs] [sortablejsOptions]="optionsA"></div>
+      <div class= "subcontain contenedor" [sortablejs] [sortablejsOptions]="optionsA">
+        <div class="drag-unit image"></div>
+      </div>
       <br>
       <h4 class="subtitle"><span class="badge badge-default badge-pill">3</span> Aplicación</h4>
-      <div class= "subcontain" [sortablejs] [sortablejsOptions]="optionsA"></div>
+      <div class= "subcontain contenedor" [sortablejs] [sortablejsOptions]="optionsA">
+        <div class="drag-unit slider"></div>
+      </div>
    
      </div>
 
     <div class="col-md-4">
         <h3 class="title"> CIERRE</h3>
         <h4 class="subtitle"><span class="badge badge-default badge-pill">4</span> Sintesís</h4>
-        <div class= "subcontain" [sortablejs] [sortablejsOptions]="optionsA"></div>
+        <div class= "subcontain contenedor" [sortablejs] [sortablejsOptions]="optionsA">
+          <div class="drag-unit acordeon"></div>
+          <div class="drag-unit text"></div>
+        </div>
         <br>
         <h4 class="subtitle"><span class="badge badge-default badge-pill">5</span> Evaluación</h4>
-        <div class= "subcontain" [sortablejs] [sortablejsOptions]="optionsA"></div>
+        <div class= "subcontain contenedor" [sortablejs] [sortablejsOptions]="optionsA">
+          <div class="drag-unit pdf"></div>
+        </div>
     </div>
   </div>
   <br>
