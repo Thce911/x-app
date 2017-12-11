@@ -1,5 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+/*ICONS*/
+
+.idea{
+    width: 80px;
+    height: auto;
+  }
+  .icon{
+    width: 40px;
+    height: auto;
+    margin: 20px;
+}
 
 /* SVGS*/
 .text{
@@ -52,12 +63,16 @@
     background-repeat: no-repeat;
 }
 
-.slider{
+.carousel{
     background: url('/assets/icons/slider.svg');
     background-repeat: no-repeat;
 }
 .cartg{
     background: url('/assets/icons/cartg.svg');
+    background-repeat: no-repeat;
+}
+.video{
+    background: url('/assets/icons/video.svg');
     background-repeat: no-repeat;
 }
 

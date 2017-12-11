@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Course, Pendejada } from './course';
+import { Course, Group } from './course';
 
 @Injectable()
 export class CourseService {
 
-public curso: Course = new Course('', '', '');
+public curso: Course = new Course('', '');
 
-public pendejada: Pendejada = new Pendejada([]);
+public group: Group = new Group([]);
 
   constructor() { }
 }

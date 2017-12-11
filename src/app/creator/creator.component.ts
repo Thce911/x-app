@@ -4,7 +4,7 @@ import { SortablejsOptions } from 'angular-sortablejs';
 
 import { SortablejsOptiosasda } from 'editable';
 
-import { Course, Pendejada } from '../course';
+import { Course, Group } from '../course';
 import { CourseService } from '../course.service';
 import { SortablejsService } from 'angular-sortablejs/dist/src/sortablejs.service';
 import { stringify } from 'querystring';
@@ -14,7 +14,8 @@ import { stringify } from 'querystring';
 @Component({
   selector: 'app-creator',
   templateUrl: './creator.component.html',
-  styleUrls: ['./creator.component.css']
+  styleUrls: ['./creator.component.css'],
+  
 })
 export class CreatorComponent implements OnInit {
   optionsA: SortablejsOptions = {
@@ -40,11 +41,11 @@ export class CreatorComponent implements OnInit {
   };
 
   course: Course;
-  pendejada: Pendejada;
+  group: Group;
 
   constructor(private router: Router, courseService: CourseService) {
     this.course = courseService.curso;
-    this.pendejada = courseService.pendejada;
+    this.group = courseService.group;
    }
 
   ngOnInit() {
@@ -55,10 +56,10 @@ export class CreatorComponent implements OnInit {
     for (const lmao of <any>ayy) {
       var x = lmao.querySelectorAll('div');
       for (const y of x) {
-        this.pendejada.elements.push(y);
+        this.group.elements.push(y);
       }
     }
-    console.log(this.pendejada.elements);
+    console.log(this.group.elements);
    this.router.navigateByUrl('/publish', {skipLocationChange: true});
   }
 }

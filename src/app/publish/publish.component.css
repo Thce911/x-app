@@ -1,0 +1,96 @@
+ @import url("../creator/creator.component.css");
+
+.publicar{
+    margin-left: 30px;
+    width: 150px;
+}
+
+.credi2{
+    font-size: x-small;
+    padding-left: 50px;
+}
+
+.credi3{
+    font-size: small;
+    padding-right: 50px;
+}
+
+
+.head{
+    width: auto;
+    height: auto;
+    
+}
+
+.elemento{
+    border-radius: 8px;
+    margin: 20px;
+    
+}
+
+.margin{
+    margin: 10px;
+    
+}
+.button {
+    position: absolute;
+    right: 10%;
+    margin: 10px;
+}
+
+.upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: rgb(182, 182, 182);
+    line-height: 200px;
+    text-align: center
+  }
+
+  .upload-drop-zone {
+    margin-top: 40px;
+    height: 200px;
+    border-width: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .idea{
+    width: 80px;
+    height: auto;
+    
+  }
+
+  .espeis{
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  .flipbookv{
+    width: 100%;
+    height: 40vh;
+  }
+
+  .creatfoot{
+    background-color: #0F0F0F;
+    background-size: cover;
+    width: 100%;
+    min-height: auto;
+    padding-top: 20px;
+}
+
+.credi2{
+    font-size: x-small;
+    padding-left: 50px;
+}
+
+.credi3{
+    font-size: small;
+    padding-right: 50px;
+}
+
+.loffset{
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.drag-unit{
+    display: none;
+}
