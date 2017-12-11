@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<link rel="shortcut icon" href="comunes/imagenes/favicon.png">
+<title></title>
+
+<!-- Bootstrap core CSS -->
+<link href="comunes/css/bootstrap.min.css" rel="stylesheet">
+<link href="comunes/css/bootstrap-reset.css" rel="stylesheet">
+<!--otros css-->
+<link href="comunes/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href='comunes/css/rotating-card.css' rel='stylesheet' />
+
+<!-- Custom styles for this template -->
+<link href="comunes/css/style.css" rel="stylesheet">
+<link href="comunes/css/style-responsive.css" rel="stylesheet"/>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+<script src="recursos/scorm3/scormscriptWrapper.js" language="JavaScript"></script>
+<script src="recursos/estructura.js" language="JavaScript"></script>
+<script src="recursos/js/estructura.js" language="JavaScript"></script>
+</head>
+
+<body>
+<script>
+	<!--ID para el seguimiento del subtema -->
+	registroAvance('MET');
+	<!--/ID para el seguimiento del subtema -->
+</script> 
+<script>
+	<!--No mover -->
+	var valorSuspendData = new String(GetSCORMValue("cmi.suspend_data"));
+	var marcas = valorSuspendData.split(",");
+	var hashmarcas = new Array();
+	for (i=0;i<marcas.length;i++) hashmarcas[marcas[i]]=1;
+	<!--/No mover -->
+	</script>
+<section id="container" > 
+  
+  <!--Menu Lateral-->
+  <aside><script src="comunes/js/menu.js"></script></aside>
+  <!--Termina Menu Lateral-->
+  
+  <section id="main-content">
+    <section class="wrapper"> 
+      
+      <!--Inserta botón subir--> 
+      <a href="#" class="scrollup" id="flecha">Scroll</a> 
+      <!--/Inserta botón subir--> 
+
+      <!--Inserta botón Menu--> 
+      <div id="botonMenu"></div>
+      <!--/Inserta botón Menu--> 
+      
+      
+      <!--Titulo la página -->
+      
+      <div class="breadcrumb">
+        <div class="row" >
+          <div class="col-md-12" >
+            <div class="row" >
+              <ul class="nav nav-pills">
+                <li>
+                  <h4 class="text-muted" style="margin-top:9px; margin-left:10px;"> ¿Cómo voy a aprender?</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--/Titulo la página --> 
+      
+      <!--CONTENIDO--> 
+      
+      <!--Recurso 12 Columnas-->
+      
+      <div class="row" >
+        <div class="col-md-12" >
+          <div class="thumbnail" style="padding:10px">
+           
+           <p>Este curso ha sido diseñado considerando los principios del <strong>Aprendizaje Autodirigido</strong>, que tiene como propósito incitar a los participantes a gestionar su propio proceso de aprendizaje. La capacidad de aprender por uno mismo se ha convertido en un prerrequisito en el contexto educativo actual.</p>
+              <p>Aprender de forma autodirigida no significa que el proceso de aprendizaje se lleve a cabo de forma aislada; las personas que aprenden bajo este formato también presentan una fuerte tendencia por aprender de otras personas, por ejemplo, por medio de <strong>comunidades de aprendizaje</strong> y de otros elementos que forman parte de su entorno.</p>
+              
+              <p>Te invitamos a que leas con atención cada uno de los siguientes apartados, ya que en ellos encontrarás información relevante para tu proceso de aprendizaje.</p>
+              
+           
+           
+             <div class="row">
+			
+             
+             <div class="col-md-12">
+             
+             
+            
+            <table class="table">
+            <tr bgcolor="#7e7e7e">
+                   <td class="wht-color" style="line-height:30px; padding-bottom:5px;" > <img class="img-rounded pull-left icono" src="comunes/imagenes/metodologia/btn_forma_trabajo.png" alt=""/><strong>Forma de trabajo</strong></td>
+                  </tr>
+                  
+                  <tr>
+                    <td> <p>La forma de trabajo está centrada en tu desempeño, por lo que necesitas asumir un rol muy activo en el estudio de contenidos y la realización de actividades.</p>
+             <p>Cada vez que accedas a los contenidos del curso, te recomendamos:</p>
+             <ol>
+               <li><strong>Disponer de un lugar propicio de trabajo</strong> que te permita concentrarte, donde exista poco ruido y buena iluminación.</li>
+                 <li><strong>Establecer tu propio horario de estudio</strong>, de tal forma que no afecta tu vida laboral y familiar.</li>
+                 <li><strong>Disponer de un tiempo continuo</strong> para trabajar ininterrumpidamente por lo menos para cubrir un subtema completo o una actividad.</li>
+                 <li>Estudiar los temas en el <strong>orden</strong> en el que se presentan.</li>
+	<li>Realizar <strong>todas las actividades del curso</strong>, ya que fueron diseñadas para facilitar el proceso de aprendizaje.</li>
+             </ol>
+             
+             </td>
+                  </tr>
+                  
+                  
+                  
+                  <tr bgcolor="#7e7e7e">
+                   <td class="wht-color" style="line-height:30px; padding-bottom:5px;" > <img class="img-rounded pull-left icono" src="comunes/imagenes/metodologia/btn_acreditacion.png" alt=""/><strong>Acreditación del curso</strong></td>
+                  </tr>
+                  
+                  <tr>
+                    <td> <p>Para la acreditación del curso es necesario:</p>
+            
+             <ul>
+               <li><strong>Cumplir</strong> con el <strong>estudio</strong> del contenido de cada uno de los <strong>temas</strong> del curso.</li>
+                 <li><strong>Realizar</strong> todas las <strong>actividades</strong> del curso, tanto las evaluables como las no evaluables.</li>
+                 <li><strong>Realizar</strong> la <strong>evaluación</strong> del curso.</li>
+                 
+                 <li><strong>Obtener</strong> una <strong>calificación</strong> igual o mayor a 70/100 en la evaluación del curso.</li>
+                 
+                 <li><strong>Finalizar</strong> el curso durante tu <strong>periodo de acceso</strong>.</li>
+             </ul>
+             
+             </td>
+                  </tr>
+                  
+                  
+                    <tr bgcolor="#7e7e7e">
+                   <td class="wht-color" style="line-height:30px; padding-bottom:5px;" > <img class="img-rounded pull-left icono" src="comunes/imagenes/metodologia/btn_politicas.png" alt=""/><strong>Políticas</strong></td>
+                  </tr>
+                  
+                  <tr>
+                    <td>   <ul>
+	
+	<li>La <strong>calificación mínima para aprobar el curso es de 70/100</strong>. Dicha nota es la calificación obtenida en la evaluación del curso.</li>
+	 <li>El <strong>examen de evaluación</strong> tiene las siguientes consideraciones:</li>
+  <ul>
+		<li><strong>Ofrece dos oportunidades para realizarla</strong>. Si en la primera oportunidad la calificación no es aprobatoria (menor a 70) o deseas obtener un mayor resultado, puedes optar por una segunda oportunidad.</li>
+		<li><strong>La calificación que se registra en el sistema es la de mayor puntuación</strong>. Es tu elección decidir si utilizas la segunda oportunidad.</li>
+		<li><strong>Una vez iniciada la evaluación, ésta no podrá ser cancelada</strong>. Debes acceder a la evaluación en el momento en que consideres que estás preparado para completarla satisfactoriamente. Te recomendamos reservar al menos 30 minutos para esta actividad.</li>
+                </ul>
+            </ul></td>
+                  </tr>
+                  
+            </table>
+            
+            </div>
+            
+           
+             </div>
+             
+          
+          </div>
+        </div>
+  </div>
+      <!--Recurso 12 Columnas--> 
+      
+      <!--/CONTENIDO--> 
+      
+    </section>
+    <!--/wrapper--> 
+  </section>
+  <!--/main-content--> 
+  
+</section>
+<!--/Container--> 
+
+<!-- COMUNES --> 
+<script src="comunes/js/jquery-2.1.1.min.js"></script> 
+<script src="comunes/js/scripts.js"></script> 
+<script src="comunes/js/bootstrap.min.js"></script> 
+<script class="include" type="text/javascript" src="comunes/js/jquery.dcjqaccordion.2.7.js"></script> 
+<script src="comunes/js/jquery.scrollTo.min.js"></script> 
+<script src="comunes/js/jquery.nicescroll.js" type="text/javascript"></script> 
+<script src="comunes/js/modernizr.custom.js"></script> 
+<script src="comunes/js/modernizr-2.5.3.min.js"></script> 
+<script src="comunes/js/common-scripts.js"></script> 
+
+<!--Scripts para esta página--> 
+<script>
+    $('.carousel').carousel({
+	  interval: 5000
+	}); 
+</script>
+</body>
+</html>
