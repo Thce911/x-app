@@ -7,7 +7,7 @@
       </a>
         <h4 class="separa2">¡Hola!, </h4> &nbsp;<h3>{{course.professor}}</h3>
         <form class="form-inline">
-          <a (click)="toPublish()" class="btn btn-outline-success my-2 my-sm-0 publicar" >Publicar</a>
+          <a (click)="toPublish()" class="btn btn-success publicar" >Publicar</a>
         </form>
       </nav>
   <div class="row dashboardbg">
@@ -49,7 +49,9 @@
               <div class="media espeis visible " alt="texto">
                   <img src="./assets/icons/text.svg" class="icon" alt="">
                 <div class="media-body">
-                    <textarea class="form-control" id="form1" rows="3" placeholder="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quasi facere earum voluptatum quos itaque nulla ex, adipisci amet sed alias sequi tenetur cupiditate soluta quas quidem asperiores molestiae error."></textarea> 
+                    <textarea class="form-control" id="form1" rows="10" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac justo suscipit, condimentum nisi eget, iaculis nunc. Morbi rhoncus ultrices urna, sagittis vestibulum diam pretium quis. Vivamus blandit odio a lobortis eleifend. Duis varius auctor mauris hendrerit laoreet. Duis sodales mollis lacinia. Etiam sit amet nibh dolor. Integer vel risus nibh. Donec sit amet enim varius, condimentum risus tempus, tempus purus. Donec quis magna a nulla aliquet gravida pretium pulvinar est. Suspendisse imperdiet leo felis, sit amet pellentesque risus malesuada et. Proin gravida pharetra lectus. In fringilla enim id neque faucibus, eleifend iaculis arcu dapibus. Aenean lectus quam, finibus id pretium non, ullamcorper id risus. Nulla maximus in ex ut feugiat. Vestibulum eu bibendum tortor.
+
+                    Donec pharetra ex at fermentum fringilla. Mauris a malesuada neque. Duis imperdiet, neque at gravida pretium, nibh leo lobortis magna, in tristique magna tortor at metus. Integer vestibulum erat in interdum dapibus. Sed rutrum dapibus sapien ac ultrices. Phasellus convallis hendrerit sodales. Duis bibendum neque quis enim euismod convallis."></textarea> 
                 </div>
               </div>
               <!-- -->
@@ -67,16 +69,7 @@
               <!---->
             </div>
 
-            <div class="drag-unit code">
-              <!--CodeComponent-->
-              <div class="media offset espeis visible" alt="code">
-                  <img src="./assets/icons/code.svg" class="icon" alt="">
-                  <div class="media-body">
-                      <div class="upload-drop-zone "><i class="fas fa-file-code fa-5x"></i></div>  
-                  </div>
-                </div>
-              <!---->
-            </div>
+            
             <!--FLIPBOOK-->
             <div class="drag-unit flipbook ">
                 <div class="media offset espeis visible" alt="flipbook">
@@ -89,39 +82,13 @@
             </div>
             <!-- -->
             <div class="drag-unit modales">
-              <!--ModalComponent-->
-              <div class="media offset text-center espeis visible " alt="modal">
-                  <img src="./assets/icons/modal.svg" class="icon" alt="">
-                  <div class="media-body ">
-                      <div class="card">
-                          
-                          <div class="card-body">
-                            <a class="btn btn-info" href="#modal" data-toggle="modal">Activar Modal</a>
-                          </div>
-                        </div>
-                    
-                    <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    
-                    <!--Medium size default-->
-                          <div class="modal-dialog modal-md">
-                            <div class="modal-content text-justify">
-                              <div class="modal-header ">
-                                
-                                <h4 class="modal-title">Esto es un modal</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                              </div>
-                              <div class="modal-body"><p class="lead"><strong> Aqui podras agregar contenido, proximamente </strong><br><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt accusamus aut ipsa aliquam adipisci, est eius repellat nihil tempora error quisquam temporibus, eos similique laborum vitae sapiente, qui magni. Cupiditate?</p></div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-                        <!-- Termina Modal --> 
+                <div class="media offset espeis visible" alt="acordeon">
+                    <img src="./assets/icons/flipbook.svg" class="icon" alt="">
+                    <div class="media-body ">
+                        <object type="text/html" data="./assets/popup.html" class="flipbookv">
+                        </object> 
+                    </div>
                   </div>
-                  </div>
-                <!--End ModalComponent-->
               </div>
 
             
@@ -137,58 +104,13 @@
             
 
             <div class="drag-unit acordeon">
-              <!--Acordeon Component-->
-              <div class="media offset espeis visible " alt="acordeon">
-                  <img src="./assets/icons/acordeon.svg" class="icon" alt="">
-                  <div class="media-body">
-                      <div id="accordion" role="tablist">
-                          <div class="card">
-                            <div class="card-header" role="tab" id="headingOne">
-                              <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Collapsible Group Item #1
-                                </a>
-                              </h5>
-                            </div>
-                        
-                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                              <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header" role="tab" id="headingTwo">
-                              <h5 class="mb-0">
-                                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  Collapsible Group Item #2
-                                </a>
-                              </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                              <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header" role="tab" id="headingThree">
-                              <h5 class="mb-0">
-                                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                  Collapsible Group Item #3
-                                </a>
-                              </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                              <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                            </div>
-                          </div>
-                        </div>   
+                <div class="media offset espeis visible" alt="acordeon">
+                    <img src="./assets/icons/flipbook.svg" class="icon" alt="">
+                    <div class="media-body ">
+                        <object type="text/html" data="./assets/accordion.html" class="flipbookv">
+                        </object> 
+                    </div>
                   </div>
-                </div>
-                <!--SliderComponentEnd-->
             </div>
 
             <div class="drag-unit pdf">

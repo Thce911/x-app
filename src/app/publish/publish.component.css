@@ -1,4 +1,5 @@
- @import url("../creator/creator.component.css");
+
+ 
 
 .publicar{
     margin-left: 30px;
@@ -91,6 +92,3 @@
     margin-bottom: 120px;
 }
 
-.drag-unit{
-    display: none;
-}

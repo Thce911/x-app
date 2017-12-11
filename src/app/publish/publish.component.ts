@@ -30,7 +30,6 @@ export class PublishComponent implements OnInit {
       
       document.getElementById("container").appendChild(element);
       
-      
     });
   }
 
