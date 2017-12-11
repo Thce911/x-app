@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<link rel="shortcut icon" href="comunes/imagenes/favicon.png">
+
+<title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./demo.css">
+</head>
+
+<body>
+<div class="container">
+  <!--NAVBAR-->
+    <nav class="mx-auto navbar navbar-light bg-light justify-content-left">
+        <a routerLink="/creator" class="btn btn-outline-primary my-2 my-sm-0" >Regresar</a>
+    </nav>
+    <!--Content-->
+    <div class="container">
+       <!--Head-->
+       <div class="col-md-12 elemento espeis">
+          <div class="col-md-12 ">
+            <h1 class="display-3 text-center">Curso Demo</h1>
+            <hr>
+            <h2 class="display-5 text-center"><small> creado por:</small> <br> Autor Anónimo</h2>
+          </div>
+        </div>
+        <!--Intro section-->
+        <div class="col-md-12 elemento">
+          <hr>
+          <h2 >Introducción</h2>
+          <hr>
+        </div>
+        <!--Image component-->
+        <div class="media offset" alt="imagen">
+            <img src="./icons/image.svg" class="icon" alt="">
+            <div class="media-body">
+                <!-- dorpArea<div class="upload-drop-zone "><i class="fas fa-file-image fa-5x"></i></div>-->
+                <img src="./resources/slider_04.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <!---->
+        <!--TextComponent-->
+        <div class="media espeis" alt="texto">
+            <img src="./icons/text.svg" class="icon" alt="">
+          <div class="media-body">
+              <textarea class="form-control" id="form1" rows="3" placeholder="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quasi facere earum voluptatum quos itaque nulla ex, adipisci amet sed alias sequi tenetur cupiditate soluta quas quidem asperiores molestiae error."></textarea>
+          </div>
+        </div>
+        <div class="col-md-12 elemento">
+            <hr>
+            <h2 >Contenido</h2>
+            <hr>
+          </div>
+           <!--CodeComponent-->
+           <div class="media offset" alt="code">
+              <img src="./icons/code.svg" class="icon" alt="">
+              <div class="media-body">
+                  <div class="upload-drop-zone "><i class="fas fa-file-code fa-5x"></i></div>
+              </div>
+            </div>
+            <!---->
+          <!--CodeComponent-->
+           <div class="media offset espeis" alt="flipbook">
+              <img src="./icons/flipbook.svg" class="icon" alt="">
+              <div class="media-body ">
+                  <object type="text/html" data="http://cursoste.tecvirtual.mx/cursos/dct/documentacion/eel/diplomados/images/flipbook/finanzas/index.html#book5/page4-page5" class="flipbookv">
+                  </object>
+              </div>
+            </div>
+            <!-- -->
+             <!--Intro section-->
+          <div class="col-md-12 elemento">
+              <hr>
+              <h2 >Actividad</h2>
+              <hr>
+            </div>
+
+            <!--ModalComponent-->
+           <div class="media offset text-center espeis" alt="modal">
+              <img src="./icons/modal.svg" class="icon" alt="">
+              <div class="media-body ">
+                  <div class="card">
+
+                      <div class="card-body">
+                        <a class="btn btn-info" href="#modal" data-toggle="modal">Activar Modal</a>
+                      </div>
+                    </div>
+
+                <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+                <!--Medium size default-->
+                      <div class="modal-dialog modal-md">
+                        <div class="modal-content text-justify">
+                          <div class="modal-header ">
+
+                            <h4 class="modal-title">Esto es un modal</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          </div>
+                          <div class="modal-body"><p class="lead"><strong> Aqui podras agregar contenido, proximamente </strong><br><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt accusamus aut ipsa aliquam adipisci, est eius repellat nihil tempora error quisquam temporibus, eos similique laborum vitae sapiente, qui magni. Cupiditate?</p></div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- Termina Modal -->
+              </div>
+              </div>
+            <!--End ModalComponent-->
+             <!--Slider/CarouselComponent-->
+             <div class="media offset espeis" alt="slider">
+                <img class="ml-3 icon" src="./icons/slider.svg" alt="Generic placeholder image">
+                <div class="media-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="./resources/slider_01.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="./resources/slider_02.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="./resources/slider_03.jpg" alt="Third slide">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            <!--EnCarouselComponent-->
+            <div class="col-md-12 elemento">
+                <hr>
+                <h2  >Conclusión</h2>
+                <hr>
+              </div>
+
+                <!--Acordeon Component-->
+                <div class="media offset espeis" alt="acordeon">
+                    <img src="./icons/acordeon.svg" class="icon" alt="">
+                    <div class="media-body">
+                        <div id="accordion" role="tablist">
+                            <div class="card">
+                              <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                  </a>
+                                </h5>
+                              </div>
+
+                              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" role="tab" id="headingTwo">
+                                <h5 class="mb-0">
+                                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Collapsible Group Item #2
+                                  </a>
+                                </h5>
+                              </div>
+                              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" role="tab" id="headingThree">
+                                <h5 class="mb-0">
+                                  <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Collapsible Group Item #3
+                                  </a>
+                                </h5>
+                              </div>
+                              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <!--SliderComponentEnd-->
+                  <!--PDFComponent-->
+                  <div class="media offset" alt="pdf">
+                      <img src="./icons/pdf.svg" class="icon" alt="">
+                      <div class="media-body ">
+                          <object type="application/pdf" data="./resources/pdf.pdf" class="flipbookv">
+                          </object>
+                      </div>
+                    </div>
+                    <!-- -->
+
+                  <div class="col-md-12 elemento">
+                    <hr>
+                    <h2> Evaluación </h2>
+                    <hr>
+                  </div>
+                  <!-- Actividad -->
+                  <div class="media espeis" alt="quiz">
+                    <img src="./icons/act.svg" class="icon" alt="">
+                    <div class="media-body">
+
+                            <div class="card-header text-white bg-secondary">
+                              <h4>Quiz</h4>
+                            </div>
+                            <div class="card-body ">
+                              <h4 class="card-title">Titulo de la Actividad</h4>
+                              <p class="card-text">¿Aqui podrás ingresar tus preguntas?</p>
+                              <fieldset id="1">
+                              <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                                    Option one is this and that&mdash;be sure to include why it's great
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    Option two can be something else and selecting it will deselect option one
+                                  </label>
+                                </div>
+                                <div class="form-check ">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                                    Option three is disabled
+                                  </label>
+                                </div>
+                              </fieldset>
+
+                                <div class="espeis">
+                                    <h4 class="card-title">Titulo de la Actividad</h4>
+                                    <p class="card-text">¿Aqui podrás ingresar tus preguntas?</p>
+                                    fi
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios1" value="option1" >
+                                          Option one is this and that&mdash;be sure to include why it's great
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option2">
+                                          Option two can be something else and selecting it will deselect option one
+                                        </label>
+                                      </div>
+                                      <div class="form-check ">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios3" value="option3" >
+                                          Option three is disabled
+                                        </label>
+                                      </div>
+                                  </div>
+                                <button class="btn btn-success">Evaluar</button>
+                          </div>
+                    </div>
+                  </div>
+                  <!-- -->
+
+                  <!-- -->
+
+                <!--Video Component-->
+                <div class="media offset" alt="video">
+                    <img src="./assets/icons/video.svg" class="icon" alt="">
+                    <div class="media-body">
+                        <iframe width="100%" height="600px" src="https://www.youtube.com/embed/uXFUl0KcIkA?rel=0" frameborder="0" gesture="media offset" allow="encrypted-media offset" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                <!--EndVideo Component-->
+
+
+
+                    <div class="col-md-12 loffset text-center">
+                        <h2>Aqui termina tu curso!</h2>
+                        <br>
+                        <h5>Tomate unos minutos para contestar esta breve encuesta </h5>
+                        <br>
+
+                        <button class="btn btn-outline-secondary" href="">Ir a la encuesta</button>
+                        <hr>
+                    </div>
+
+
+                  <!-- -->
+                  <!--End Intro section-->
+
+
+
+    </div>
+    <div class="fixed-bottom text-white border border-bottom-0 border-right-0 border-left-0  border-light creatfoot container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <br>
+          <p class="credi2">AV. EUGENIO GARZA SADA 2501 SUR COL. TECNOLÓGICO C.P. 64849 | MONTERREY, NUEVO LEÓN, MÉXICO |<br> TEL. +52 (81) 8358-2000 D.R.© INSTITUTO TECNOLÓGICO Y DE ESTUDIOS SUPERIORES DE MONTERREY, MÉXICO. 2017</p>
+        </div>
+        <div class="col-md-6">
+            <ul class="nav justify-content-end credi3 ">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#http://tec.mx/es/aviso-legal"> <b> Aviso Legal </b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://tec.mx/es/politicas-de-privacidad-del-tecnologico-de-monterrey"> <b> Politicas de privacidad</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://tec.mx/es/avisos-de-privacidad"> <b> Avisos de Privacidad </b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://tec.mx/es/sobre-el-sitio"> <b>Sobre el sitio</b></a>
+                  </li>
+
+              </ul>
+          </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
