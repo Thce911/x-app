@@ -1,9 +1,10 @@
-.dashboardbg{
+
+.dashboard{
     background: url('/assets/icons/CreatorBG.png');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
+    background-size: 100%;
+    padding-top: 80px;
+    height: 100vh;
+    
 }
 .creatfoot{
     background-color: rgb(47, 52, 68);
@@ -13,19 +14,26 @@
     padding-top: 20px;
 }
 
+@media (min-width: 1200px) { 
+    .scalable{
+        padding: 300px;
+    }
+ }
+
 .appbg{
-    padding: 10px;
     background-color: #D8DEE5;
-    min-height:30vh;
+    height: 100px;
+    margin-bottom: 0px;
 }
 
 .separa2{
+    padding-top: 10px;
     margin-right: 40px;
 }
 
 .drag-unit {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     margin: 10px;
     display: inline-block;
     cursor: pointer;
@@ -75,26 +83,22 @@
 }
 
 .contain{
-    height: 580px;
+    height: 600px;
     background-color:#ececec; 
-    
     font-size:16px;
 }
 
-.subcontain{
-    height: 250px;
-    background-color:#ececec; 
-}
 
 .visible{
     display: none;
 }
 
 .publicar{
+    margin-top: 15px;
     margin-left: 30px;
-    width: 150px;
+    width: 100px;
     font-weight: bold;
-    color:#ffff;
+    
 }
 
 .credi2{
@@ -165,21 +169,52 @@
     background-size: cover;
     width: 100%;
     min-height: auto;
-    padding-top: 20px;
+    padding-top: 5px;
+    
 }
 
 .credi2{
-    font-size: x-small;
+    font-size: xx-small;
     padding-left: 50px;
 }
 
 .credi3{
-    font-size: small;
+    font-size: xx-small;
     padding-right: 50px;
 }
 
 .loffset{
     margin-top: 60px;
     margin-bottom: 120px;
+}
+.white{
+    fill: #ffffff;
+}
+
+
+
+
+@media (min-width: 991px) { 
+
+    .centered{
+        padding-top: 20px;
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+    
+    .subcontain{
+        padding-top: 20px;
+        padding-left: 40px;
+        height: 160px;
+        background-color:#ececec; 
+    }
+
+    .contain{
+        padding: 100px;
+        height: 400px;
+        background-color:#ececec; 
+        font-size:16px;
+    }
+
 }
 

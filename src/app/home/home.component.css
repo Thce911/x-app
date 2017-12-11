@@ -15,7 +15,7 @@
 }
 
 .start{
-  margin-top: 300px;
+  margin-top: 10%;
   background-color: #ffffff;
   border-radius: 20px;
   max-width: 600px;
@@ -81,20 +81,18 @@
 
 .offset{
   margin-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 offset2{
   margin-top: 20px;
-  margin-bottom: 150px;
 }
 
 .offset3{
-  margin-top: 80px;
+  margin-top: 10%;
   margin-bottom: 10px;
 }
 
 .ideafoot{
   width:120px;
-
 }
