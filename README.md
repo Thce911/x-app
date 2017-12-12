@@ -1,5 +1,5 @@
 ![Image of icon]
-("https://github.com/Thce911/x-app/assets/icons/images/icon.png") 
+("https://github.com/Thce911/x-app/src/assets/icons/images/icon.png") 
 
 
 # PLANNED
